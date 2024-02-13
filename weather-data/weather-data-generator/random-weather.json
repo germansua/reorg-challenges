@@ -1,0 +1,11 @@
+[ {
+  "city" : "Minneapolis",
+  "temperature" : 79,
+  "humidity" : 92,
+  "condition" : "Snowy"
+}, {
+  "city" : "Fresno",
+  "temperature" : 5,
+  "humidity" : 81,
+  "condition" : "Partly cloudy"
+} ]
