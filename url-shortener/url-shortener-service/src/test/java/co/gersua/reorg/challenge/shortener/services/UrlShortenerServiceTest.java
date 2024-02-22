@@ -19,9 +19,11 @@ class UrlShortenerServiceTest {
     @InjectMocks
     private UrlShortenerService service;
 
+    private static final String BASE_URL = "http://localhost:8080/";
+
     @Test
     void testShortenKnownUrl() throws Exception {
-        assertEquals(new ShortenedUrl("http://shurl.co/ac6bb669", "https://www.google.com", 0),
+        assertEquals(new ShortenedUrl(BASE_URL + "ac6bb669", "https://www.google.com", 0),
                 service.shorten("https://www.google.com"));
     }
 

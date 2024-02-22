@@ -23,15 +23,15 @@ const UrlShortenerForm = () => {
     <div>
       <form onSubmit={handleSubmit}>
         <label>
-          URL larga:
+          Original URL:
           <input type="text" value={longUrl} onChange={(e) => setLongUrl(e.target.value)} />
         </label>
-        <button type="submit">Acortar URL</button>
+        <button type="submit">Shorten URL</button>
       </form>
 
       {shortUrl && (
         <div>
-          <p>URL corta generada:</p>
+          <p>URL Generated shorten URL:</p>
           <a href={shortUrl} target="_blank" rel="noopener noreferrer">
             {shortUrl}
           </a>

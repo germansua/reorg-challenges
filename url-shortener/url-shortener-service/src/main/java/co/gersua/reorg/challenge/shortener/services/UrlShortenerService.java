@@ -17,7 +17,8 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 public class UrlShortenerService {
 
     private static final String SHA_256 = "SHA-256";
-    private static final String BASE_URL = "http://shurl.co/";
+    // private static final String BASE_URL = "http://shurl.co/";
+    private static final String BASE_URL = "http://localhost:8080/";
 
     private UrlShortenerRepository repository;
 
